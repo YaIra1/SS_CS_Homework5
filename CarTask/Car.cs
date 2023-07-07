@@ -15,7 +15,7 @@
             set { _color = value; }
         }
 
-        public Car() //: this("Unknown", "transparent", -1.0)
+        public Car() 
         {
 
         }
@@ -65,7 +65,7 @@
 
         public static bool operator !=(Car a, Car b)
         {
-            return a.Name != b.Name || a.Price != b.Price;
+            return !(a == b);
         }
 
         public override string ToString()
